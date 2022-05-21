@@ -1,0 +1,58 @@
+.stops{
+    padding:2%;
+    text-align: center;
+    perspective: 1000px;
+    
+    
+}
+.stops.inner {
+    position:relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.stops:hover .stops.inner
+{
+    transform: rotateY(180deg);
+}
+
+.stops.front, .stops.back{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.stops.front{
+    color:black;
+}
+
+.stops.back{
+    background-color: orange;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 250px;
+    font-weight: bolder;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    /* height:150px;
+    width: 150px;
+    margin: 10px; */
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+.image1{
+    /* height:150px;
+    width: 150px;
+    margin: 10px; */
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
